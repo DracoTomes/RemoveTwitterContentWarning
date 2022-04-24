@@ -1,8 +1,12 @@
 {
-
   "manifest_version": 2,
   "name": "RemoveTwitterContentWarning",
-  "version": "1.1",
+
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+  "version": "1.2",
 
   "description": "Automatically clicks the small hide button on Twitters new sensitive warning screens",
 
@@ -16,6 +20,8 @@
       "matches": ["*://*.twitter.com/*"],
       "js": ["arrive-2.4.1.min.js", "clicker.js"]
     }
-  ]
+  ],
+
+  "permissions": ["storage"]
 
 }
